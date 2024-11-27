@@ -1,0 +1,6 @@
+<div>
+    <tax-input (salarySubmitted)="fetchIncomeTax($event)"></tax-input>
+    <tax-result [result]="incomeTaxResult"
+        [salary]="grossAnnualSalary"
+    ></tax-result>
+</div>
