@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { TaxCalculationModule } from './features/tax-calculator/tax-calculation.module';
 import { AppRoutingModule } from './app.routes';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+
   imports: [
     BrowserModule,
-    TaxCalculationModule,
-    AppRoutingModule  
+    CommonModule, 
+    AppRoutingModule,
+    AppComponent,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
 export class AppModule { }

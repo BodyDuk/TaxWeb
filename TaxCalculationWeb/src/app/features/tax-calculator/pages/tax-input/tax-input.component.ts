@@ -1,9 +1,11 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'tax-input',
   templateUrl: './tax-input.component.html',
-  styleUrls: ['./tax-input.component.css']
+  styleUrls: ['./tax-input.component.scss'],
+  imports: [FormsModule]
 })
 export class TaxInputComponent {
   salary: number | null = null;

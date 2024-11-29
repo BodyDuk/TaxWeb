@@ -1,11 +1,12 @@
+<!-- tax-result.component.html -->
 <div *ngIf="result">
-    <p>Income: {{ salary }}</p>
-    <p>Gross Monthly Salary: {{ result.grossMonthlySalary }}</p>
-    <p>Net Annual Salary: {{ result.netAnnualSalary }}</p>
-    <p>Net Monthly Salary: {{ result.netMonthlySalary }}</p>
-    <p>Annual Tax Paid: {{ result.annualTaxPaid }}</p>
-    <p>Monthly Tax Paid: {{ result.monthlyTaxPaid }}</p>
-  </div>
-  <div *ngIf="!result">
-    <p>No result to display.</p>
+  <p>Income: {{ salary }}</p>
+  <p>Gross Monthly Salary: {{ result.grossMonthlySalary }}</p>
+  <p>Net Annual Salary: {{ result.netAnnualSalary }}</p>
+  <p>Net Monthly Salary: {{ result.netMonthlySalary }}</p>
+  <p>Annual Tax Paid: {{ result.annualTaxPaid }}</p>
+  <p>Monthly Tax Paid: {{ result.monthlyTaxPaid }}</p>
+</div>
+<div *ngIf="!result">
+  <p>No result to display.</p>
 </div>

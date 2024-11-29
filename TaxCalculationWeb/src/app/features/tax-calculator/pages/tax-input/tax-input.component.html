@@ -1,6 +1,12 @@
-<div>
-    <label for="salary">Enter Gross Annual Salary:</label>
-    <input type="number" id="salary" [(ngModel)]="salary" />
-    <button (click)="onSubmit()">Submit</button>
+<div class="row">
+    <div class="col-4">
+        <label for="salary">Enter Gross Annual Salary:</label>
+    </div>
+    <div class="col-4">
+        <input type="number" id="salary" [(ngModel)]="salary" />
+    </div>
+    <div class="col-4">
+        <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </div>
 </div>
   
